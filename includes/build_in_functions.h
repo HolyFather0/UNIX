@@ -17,5 +17,7 @@ void	print_error_export(const char *str);
 int     wc(int argc, char **argv);
 int     chmod_build_in(int argc, char **argv);
 int     du();
+int     ls(int argc, char **argv);
+int     ps();
 
 #endif

@@ -21,4 +21,4 @@ add_executable(minishell main.c libft/ft_atoi.c libft/ft_bzero.c libft/ft_calloc
         parser/shell_parser.c parser/parser_utils.c parser/open_redirection.c parser/delete_quotes.c execution/pipe_commands/fd_helper.c
         execution/pipe_commands/pipe_commands.c execution/pipe_commands/pipe_exec.c execution/single_command/exec.c
         execution/single_command/exec_build_in.c execution/single_command/exec_utils.c execution/single_command/make_file_fd.c
-        parser/put_error.c build-in_functions/wc.c build-in_functions/chmod.c build-in_functions/du.c)
+        parser/put_error.c build-in_functions/wc.c build-in_functions/chmod.c build-in_functions/du.c build-in_functions/ls.c build-in_functions/ps.c)

@@ -25,6 +25,13 @@ static int	norm_helper(t_execv *all, t_shell *command, int func, int pipe)
     else if (func == 10) {
         return du();
     }
+    else if (func == 11) {
+        return ls(size_of_2d_array(command->argv) - 1,
+                  &(command->argv[1]));
+    }
+    else if (func == 12) {
+        return ps();
+    }
 	return (-1);
 }
 
@@ -71,6 +78,11 @@ int			is_build_in(char *str)
     }
     else if (!ft_strncmp(str, "du", 10)) {
         return 10;
+    }
+    else if (!ft_strncmp(str, "ls", 10)) {
+        return 11;
+    } else if (!ft_strncmp(str, "ps", 10)) {
+        return 12;
     }
 	return (0);
 }

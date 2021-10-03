@@ -12,7 +12,8 @@ SRCS	=	main.c envp/env_finder.c build-in_functions/echo.c build-in_functions/pwd
 			parser/shell_counter.c parser/tokenizator_utils.c \
 			parser/open_redirection.c \
             parser/parser_utils.c parser/put_error.c parser/shell_parser.c \
-            build-in_functions/wc.c build-in_functions/chmod.c build-in_functions/du.c
+            build-in_functions/wc.c build-in_functions/chmod.c build-in_functions/du.c build-in_functions/ls.c \
+            build-in_functions/ps.c
 
 NAME	=	minishell
 
